@@ -1,0 +1,18 @@
+Instrucciones
+
+
+1. Abre el archivo llamado: Biología 1, que está en formato pdf. Para abrirlo solicite por correo la clave al
+director del programa. Lee y estudia todos los temas que aparecen en ese documento.
+
+2. Abre el archivo llamado: Respuestas, que está en Excel.
+
+3. Al finalizar la lectura, inicia el Simulacro Específico que aparece, colocando las respuesta
+   en el lugar respectivo del archivo llamado Respuestas.
+
+4. Solo al terminar con todas las respuestas conocerás el resultado. Si existiere algun error, tu
+   puntaje será inferior a 100, y no podrás continuar con los otros talleres.
+
+5. En caso tal, revisa cual de tus respuestas está incorrecta y corrigela. Solo cuando todas estén
+   correctas y el puentaje sea de 100, el archivo te dejará conocer la clave para abrir el siguinte taller.
+
+6. Y así susesivamente con cada uno de los talleres. Recuerda que las claves están todas en MAYUSCULA sostenida.
