@@ -15,6 +15,7 @@ window.siteContent = {
       category: "Literatura y Política",
       title: "Revolución ética y colonialidad",
       subtitle: "De Petro a Cepeda: praxis, reconocimiento y formación de un nuevo sujeto político",
+      excerpt: "Ensayo filosófico-político sobre la coyuntura colombiana que articula materialismo histórico, dialéctica, reconocimiento, ideología y crítica de la colonialidad para examinar la formación de un nuevo sujeto político situado en el territorio.",
       href: "../Revolucion%20ética%20y%20colonialidad%20-%20De%20Petro%20a%20Cepeda%20praxis,%20reconocimiento%20y%20formación%20de%20un%20nuevo%20sujeto%20político..pdf",
       image: "../Central3.jpg"
     },
