@@ -1,0 +1,4 @@
+*.sqlite3
+.admin-key
+uploads/
+__pycache__/

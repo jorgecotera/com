@@ -48,21 +48,26 @@
   <aside class="sena-payment"><p class="eyebrow">PAGO</p><h2>Confirmación del cupo</h2><p>Mientras se activa una conciliación automática, la verificación se hará de manera manual.</p><div><span>Nequi</span><strong>3215100277</strong></div><div><span>Llave BBVA</span><strong>@BBVA3215100277</strong></div><p class="sena-note">No envíe contraseñas, códigos de autenticación ni credenciales de plataformas oficiales.</p></aside>
 </section>
 <section class="sena-request" id="solicitud">
-  <header><p class="eyebrow">SOLICITUD</p><h2>Datos para organizar la atención</h2><p>Este formulario deja preparada la estructura del registro. El envío centralizado quedará habilitado cuando se conecte el backend seguro de solicitudes y pagos.</p></header>
-  <form id="sena-request-form">
+  <header><p class="eyebrow">SOLICITUD</p><h2>Datos para organizar la atención</h2><p>Al enviar el formulario se crea una solicitud identificada por un código. El cupo solo queda confirmado después de verificar el pago.</p></header>
+  <form id="sena-request-form" enctype="multipart/form-data">
     <label>Nombre completo<input name="nombre" autocomplete="name" required></label>
     <label>WhatsApp o teléfono<input name="telefono" inputmode="tel" autocomplete="tel" required></label>
     <label>Correo electrónico<input name="correo" type="email" autocomplete="email"></label>
+    <label>Familiar o contacto alterno<input name="familiar" autocomplete="name"></label>
+    <label>Tipo de documento<select name="documento_tipo"><option value="">Seleccione</option><option>C.C</option><option>T.I</option><option>C.E</option><option>Otro</option></select></label>
+    <label>Número de documento<input name="documento_numero" inputmode="numeric" autocomplete="off"></label>
     <label>Programa al que aspira<input name="programa" required></label>
     <label>Fecha prevista de la evaluación<input name="fecha" type="date" required></label>
     <label>Estado del pago<select name="pago" required><option value="">Seleccione</option><option>Pendiente</option><option>Ya realicé el pago</option><option>Pago presencial</option></select></label>
+    <label>Medio de pago<select name="pago_metodo"><option value="">Seleccione</option><option>Nequi</option><option>Llave BBVA</option><option>Efectivo</option></select></label>
     <label class="sena-wide">Referencia o número de transacción<input name="referencia" autocomplete="off" placeholder="Solo si ya realizó el pago"></label>
+    <label class="sena-wide">Comprobante de pago<input name="comprobante" type="file" accept="image/jpeg,image/png,image/webp,application/pdf"><small>Opcional mientras el pago esté pendiente. Máximo 5 MB.</small></label>
     <label class="sena-wide">Observaciones<textarea name="observaciones" rows="4" placeholder="Información útil para programar la asesoría"></textarea></label>
     <label class="sena-consent sena-wide"><input name="acepta" type="checkbox" required><span>He leído y acepto las condiciones del servicio y autorizo el uso de estos datos para gestionar mi solicitud.</span></label>
-    <div class="sena-wide sena-form-actions"><button type="submit">Preparar solicitud</button><p id="sena-form-status" role="status" aria-live="polite"></p></div>
+    <div class="sena-wide sena-form-actions"><button type="submit">Enviar solicitud</button><p id="sena-form-status" role="status" aria-live="polite"></p></div>
   </form>
 </section>
-<section class="sena-admin-note"><strong>Estado del módulo:</strong> interfaz pública preparada. Falta conectar almacenamiento privado, verificación de pagos y panel administrativo antes de recibir solicitudes reales.</section>
+<section class="sena-admin-note"><strong>Importante:</strong> enviar la solicitud no confirma el cupo. La confirmación ocurre únicamente después de verificar el pago.</section>
 </main>
 <footer><div class="footer-brand"><img src="../Logo.jpg" alt="Logotipo"><strong>JORGE A. COTERA</strong></div><span>Educación · Matemáticas · Cultura · <a href="contacto.html">Contacto</a> · <a href="archivo.html">Archivo</a></span><a class="footer-top" href="#">Volver arriba ↑</a></footer>
 <script src="app.js"></script>

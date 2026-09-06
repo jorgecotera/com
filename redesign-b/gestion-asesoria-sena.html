@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Gestión de solicitudes SENA — Jorge A. Cotera</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="enhancements.css">
+<link rel="stylesheet" href="gestion-asesoria-sena.css">
+<link rel="icon" href="../Logo.jpg" type="image/jpeg">
+</head>
+<body>
+<header class="top"><a class="brand" href="../"><img class="brand-logo" src="../Logo.jpg" alt="Logotipo"><span class="brand-name">JORGE A. COTERA<small>Gestión privada de solicitudes</small></span></a></header>
+<main class="admin-page">
+<section class="admin-login" id="admin-login">
+  <p class="eyebrow">ACCESO PRIVADO</p><h1>Gestión de solicitudes</h1>
+  <p>Ingrese la clave administrativa. La clave se conserva únicamente durante esta sesión del navegador.</p>
+  <form id="admin-key-form"><label>Clave administrativa<input id="admin-key" type="password" autocomplete="current-password" required></label><button type="submit">Entrar</button></form>
+  <p id="admin-login-status" role="status"></p>
+</section>
+<section class="admin-console" id="admin-console" hidden>
+  <header class="admin-title"><div><p class="eyebrow">CONTROL OPERATIVO</p><h1>Solicitudes y compromisos</h1></div><button id="admin-logout" class="secondary">Cerrar sesión</button></header>
+  <div class="admin-tools">
+    <label>Fecha de atención<input id="admin-date" type="date"></label>
+    <button id="admin-refresh">Actualizar</button>
+    <button id="admin-export-day">Descargar Excel de la fecha</button>
+    <button id="admin-export-all" class="secondary">Descargar Excel general</button>
+  </div>
+  <div class="admin-kpis">
+    <article><span>Solicitudes</span><strong id="kpi-total">0</strong></article>
+    <article><span>Confirmados</span><strong id="kpi-confirmed">0</strong></article>
+    <article><span>Pendientes</span><strong id="kpi-pending">0</strong></article>
+    <article><span>Valor confirmado</span><strong id="kpi-value">$0</strong></article>
+  </div>
+  <p class="admin-status" id="admin-status" role="status"></p>
+  <div class="admin-table-wrap"><table><thead><tr><th>Solicitud</th><th>Nombre</th><th>Teléfono</th><th>Programa</th><th>Fecha</th><th>Pago</th><th>Comprobante</th><th>Estado</th><th>Acciones</th></tr></thead><tbody id="admin-rows"></tbody></table></div>
+</section>
+</main>
+<script src="gestion-asesoria-sena.js"></script>
+</body>
+</html>
