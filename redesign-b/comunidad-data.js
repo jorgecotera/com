@@ -61,7 +61,7 @@ const community2021 = [
   {year:2021,grade:"6°",area:"Ciencia · Sociedad",type:"PDF",title:"El Coronavirus",href:"../LCE.pdf"},
 
   {year:2021,grade:"7°",area:"Acompañamiento en pandemia",type:"GUÍA",title:"Guía 0",href:"https://drive.google.com/file/d/1l9F1_VW9OqVxTGV1k5r5X_wwT_Bd35-w/view?usp=sharing",external:true},
-  {year:2021,grade:"7°",area:"Acompañamiento en pandemia",type:"GUÍA",title:"Guía 1 · Completa · Otras áreas",href:"https://drive.google.com/file/d/10f8Tn4n5mK2LOrh7IEosXICzPtxPDI74/view?usp=sharing",external:true},
+  {year:2021,grade:"7°",area:"Acompañamiento en pandemia",type:"GUÍA",title:"Guía 1 · Completa · Otras áreas",description:"Referencia histórica conservada; el enlace externo original ya no está disponible.",href:"",unavailable:true},
   {year:2021,grade:"7°",area:"Acompañamiento en pandemia",type:"GUÍA",title:"Guía 1 · Material complementario",href:"https://drive.google.com/file/d/1TKnPaMSzATRcRMvhwiinTqKDvpIi9v-s/view?usp=sharing",external:true},
   {year:2021,grade:"7°",area:"Matemáticas",type:"PDF",title:"Guía 2",href:"../Guía%207%20-%20II.pdf"},
   {year:2021,grade:"7°",area:"Matemáticas",type:"PDF",title:"Guía 3 · Período 3",href:"../7ºC%20P3%20Matemáticas%20-%20Jorge.pdf"},
@@ -90,7 +90,7 @@ const community2021 = [
   {year:2021,grade:"8°",area:"Geometría · Interactivo",type:"HTML",title:"Pitágoras · Actividad 2",href:"../Pitagoras%202.htm"},
   {year:2021,grade:"8°",area:"Geometría · Interactivo",type:"HTML",title:"Pitágoras · Actividad 3",href:"../Pitagoras%203.htm"},
   {year:2021,grade:"8°",area:"Geometría · Interactivo",type:"HTML",title:"Pitágoras · Actividad 4",href:"../Pitagoras%204.htm"},
-  {year:2021,grade:"8°",area:"Matemáticas · GeoGebra",type:"WEB",title:"Grupo de GeoGebra",href:"https://www.geogebra.org/groups",external:true}
+  {year:2021,grade:"8°",area:"Matemáticas · GeoGebra",type:"WEB",title:"Grupo de GeoGebra",description:"Referencia histórica conservada; la ruta externa original ya no está disponible.",href:"",unavailable:true}
 ];
 
 const community2020Grade6 = [

@@ -59,6 +59,17 @@ function renderCommunity(){
       <h2>${groupYear}</h2>
       <div class="community-list">
         ${items.map(item=>{
+          if(item.unavailable){
+            return `<div class="community-item is-unavailable" aria-label="${item.title}. Referencia histórica no disponible">
+              <span class="community-type">${item.type}</span>
+              <span class="community-copy">
+                <small>${item.grade} · ${item.area}</small>
+                <strong>${item.title}</strong>
+                ${item.description?`<span>${item.description}</span>`:''}
+              </span>
+              <b aria-hidden="true">—</b>
+            </div>`;
+          }
           const external=item.external||/^https?:\/\//i.test(item.href);
           return `<a class="community-item" href="${item.href}" ${external?'target="_blank" rel="noopener noreferrer"':''}>
             <span class="community-type">${item.type}</span>
