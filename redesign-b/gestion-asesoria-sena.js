@@ -9,6 +9,7 @@ const statusBox=document.querySelector('#admin-status');
 const rowsBox=document.querySelector('#admin-rows');
 let adminKey=sessionStorage.getItem('senaAdminKey')||'';
 const money=new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0});
+function esc(value){return String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
 function headers(){return {'X-Admin-Key':adminKey};}
 async function api(path,options={}){
   const response=await fetch(`${API}${path}`,{...options,headers:{...headers(),...(options.headers||{})}});
@@ -29,7 +30,7 @@ async function load(){
     document.querySelector('#kpi-confirmed').textContent=sum.confirmados;
     document.querySelector('#kpi-pending').textContent=sum.pendientes;
     document.querySelector('#kpi-value').textContent=money.format(sum.valor_confirmado);
-    rowsBox.innerHTML=(list.items||[]).map(r=>`<tr><td><strong>${r.code}</strong></td><td>${r.nombre||''}</td><td>${r.telefono||''}</td><td>${r.programa||''}</td><td>${r.fecha_atencion||''}</td><td>${r.pago_estado||''}<br><small>${r.pago_metodo||r.pago_declarado||''}</small></td><td>${r.has_comprobante?`<button class="receipt" data-receipt="${r.id}">Ver</button>`:'No'}</td><td>${r.estado||''}</td><td><div class="admin-actions">${r.pago_estado==='confirmado'?'':`<button class="ok" data-id="${r.id}" data-pay="confirmado">Confirmar pago</button>`}<button data-id="${r.id}" data-state="atendido">Atendido</button><button class="cancel" data-id="${r.id}" data-state="cancelado">Cancelar</button></div></td></tr>`).join('');
+    rowsBox.innerHTML=(list.items||[]).map(r=>{const id=Number(r.id);return `<tr><td><strong>${esc(r.code)}</strong></td><td>${esc(r.nombre)}</td><td>${esc(r.telefono)}</td><td>${esc(r.programa)}</td><td>${esc(r.fecha_atencion)}</td><td>${esc(r.pago_estado)}<br><small>${esc(r.pago_metodo||r.pago_declarado)}</small></td><td>${r.has_comprobante?`<button class="receipt" data-receipt="${id}">Ver</button>`:'No'}</td><td>${esc(r.estado)}</td><td><div class="admin-actions">${r.pago_estado==='confirmado'?'':`<button class="ok" data-id="${id}" data-pay="confirmado">Confirmar pago</button>`}<button data-id="${id}" data-state="atendido">Atendido</button><button class="cancel" data-id="${id}" data-state="cancelado">Cancelar</button></div></td></tr>`;}).join('');
     statusBox.textContent=`${list.items?.length||0} registros cargados.`;
   }catch(e){statusBox.textContent=e.message;if(/Clave/.test(e.message)){sessionStorage.removeItem('senaAdminKey');adminKey='';showLogin(e.message);}}
 }

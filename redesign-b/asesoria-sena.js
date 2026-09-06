@@ -14,7 +14,10 @@ senaForm?.addEventListener('submit',async event=>{
     const response=await fetch(`${SENA_API}/solicitudes`,{method:'POST',body:data});
     const result=await response.json().catch(()=>({}));
     if(!response.ok)throw new Error(result.error||'No fue posible registrar la solicitud.');
-    senaStatus.innerHTML=`Solicitud registrada: <strong>${result.code}</strong>. Conserve este código. El cupo está pendiente de verificación del pago.`;
+    senaStatus.replaceChildren(document.createTextNode('Solicitud registrada: '));
+    const code=document.createElement('strong');
+    code.textContent=result.code||'';
+    senaStatus.append(code,document.createTextNode('. Conserve este código. El cupo está pendiente de verificación del pago.'));
     senaForm.reset();
   }catch(error){
     senaStatus.textContent=error.message||'No fue posible registrar la solicitud.';
