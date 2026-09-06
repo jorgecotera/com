@@ -208,7 +208,7 @@ function compareArticles(a,b){
   return byKey||((b.sourceOrder||0)-(a.sourceOrder||0));
 }
 
-const articles=[...content.articles].sort(compareArticles);
+const articles=[...(content.articles||[]),...(window.archiveLegacy||[])].sort(compareArticles);
 const latest=articles[0];
 const latestRoot=document.querySelector('#latest-article');
 if(latestRoot&&latest){
