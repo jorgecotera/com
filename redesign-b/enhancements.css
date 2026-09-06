@@ -103,7 +103,7 @@ main a:hover img,main figure:hover img,main article:hover img{transform:none!imp
 }
 
 /* Antes de que la cabecera llegue a comprimirse, la navegación pasa al menú. */
-@media(max-width:900px){
+@media(max-width:1080px){
   .top nav{display:none;position:absolute;top:82px;left:0;right:0;margin:0!important;background:#171717;color:#fff;padding:24px 5vw;flex-direction:column;gap:18px;border-top:1px solid rgba(255,255,255,.15)}
   .top nav.open{display:flex}
   .top nav a{width:max-content;max-width:100%}

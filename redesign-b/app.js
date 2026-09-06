@@ -2,7 +2,7 @@ const menuButton=document.querySelector('.menu');
 const nav=document.querySelector('.top nav');
 const topBar=document.querySelector('.top');
 const mainContent=document.querySelector('main');
-const MOBILE_NAV_MAX=900;
+const MOBILE_NAV_MAX=1080;
 
 // Acceso directo al contenido principal para navegación por teclado.
 if(mainContent){
