@@ -20,6 +20,7 @@ window.siteSearchStatic = [
   {type:"Sección",title:"Enlaces y radar académico",description:"Lecturas recientes y directorio temático externo.",href:"enlaces.html",keywords:"enlaces radar revistas publicaciones externas"},
   {type:"Sección",title:"Archivo general",description:"Mapa de las secciones modernas y accesos históricos.",href:"archivo.html",keywords:"archivo mapa sitio histórico"},
   {type:"Sección",title:"Contacto",description:"Canales de contacto y acceso al formulario histórico.",href:"contacto.html",keywords:"contacto formulario"},
+  {type:"Sección",title:"Preparación SENA",description:"Solicitud, condiciones, pago y agenda para un servicio de preparación académica.",href:"asesoria-sena.html",keywords:"SENA preparación asesoría selección solicitud pago agenda"},
 
   {type:"Recurso",title:"Plan de Matemáticas 9.º - Período I",description:"Planeación histórica de Matemáticas en Alianza para el Progreso.",href:"../Matematica%20-%20Noveno%20-%20Periodo%20I.pdf",keywords:"Alianza noveno matemáticas plan periodo"},
   {type:"Recurso",title:"Plan de Física 9.º - Período I",description:"Planeación histórica de Física en Alianza para el Progreso.",href:"../Fisica%20-%20Noveno%20-%20Periodo%20I.pdf",keywords:"Alianza noveno física plan periodo"},

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Solicitud y condiciones del servicio de preparación académica para procesos de selección del SENA.">
+<title>Preparación SENA — Jorge Alonso Cotera Guerra</title>
+<link rel="canonical" href="https://jorgecotera.github.io/redesign-b/asesoria-sena.html">
+<meta property="og:title" content="Preparación SENA — Jorge Alonso Cotera Guerra">
+<meta property="og:description" content="Solicitud y condiciones del servicio de preparación académica para procesos de selección del SENA.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jorgecotera.github.io/redesign-b/asesoria-sena.html">
+<meta property="og:image" content="https://jorgecotera.github.io/Logo.jpg">
+<meta property="og:locale" content="es_CO">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Preparación SENA — Jorge Alonso Cotera Guerra">
+<meta name="twitter:description" content="Solicitud y condiciones del servicio de preparación académica para procesos de selección del SENA.">
+<meta name="twitter:image" content="https://jorgecotera.github.io/Logo.jpg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="enhancements.css">
+<link rel="stylesheet" href="asesoria-sena.css">
+<link rel="icon" href="../Logo.jpg" type="image/jpeg">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../" aria-label="Volver al inicio"><img class="brand-logo" src="../Logo.jpg" alt="Logotipo de Jorge Alonso Cotera Guerra"><span class="brand-name">JORGE A. COTERA<small>Educación · Matemáticas · Cultura</small></span></a>
+  <button class="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav aria-label="Navegación principal"><a href="../">Inicio</a><a href="perfil.html">Perfil</a><a href="articulos.html">Publicaciones</a><a href="academia.html">Academia</a><a href="didactica.html">Didáctica</a><a href="matematicas.html">Matemáticas</a><a href="archivo.html">Archivo</a></nav>
+</header>
+<main class="sena-page">
+<section class="sena-hero">
+  <div><p class="eyebrow">SERVICIO ACADÉMICO</p><h1>Preparación para procesos de selección del SENA.</h1><p>Orientación, práctica y acompañamiento académico para que cada participante se prepare y presente personalmente sus evaluaciones oficiales.</p><a class="sena-primary" href="#solicitud">Iniciar solicitud</a></div>
+  <aside><span>VALOR DEL SERVICIO</span><strong>$100.000</strong><p>El pago confirma el cupo una vez verificado. La admisión depende exclusivamente de los criterios y decisiones del SENA.</p></aside>
+</section>
+<section class="sena-grid" id="condiciones">
+  <article class="sena-terms"><p class="eyebrow">CONDICIONES DEL SERVICIO</p><h2>Acuerdo de prestación</h2>
+    <ol>
+      <li>El servicio consiste en preparación, orientación y acompañamiento académico para procesos de selección del SENA.</li>
+      <li>El participante presenta personalmente las evaluaciones oficiales. No se solicitan contraseñas ni se accede a cuentas institucionales del participante.</li>
+      <li>El valor del servicio es de <strong>$100.000 COP</strong>. El cupo queda confirmado únicamente después de verificar el pago.</li>
+      <li>La experiencia y los materiales de preparación pueden mejorar el desempeño, pero <strong>no existe garantía de admisión</strong>; el SENA aplica sus propios criterios de selección.</li>
+      <li>La atención se organiza según fecha programada, disponibilidad y orden de confirmación de los pagos.</li>
+      <li>El participante debe informar correctamente sus datos de contacto, programa de interés y fecha prevista de la evaluación, y mantenerse disponible para las sesiones acordadas.</li>
+      <li>Si una sesión debe reprogramarse por causa atribuible al prestador, se ofrecerá una nueva fecha. Las condiciones de cancelación o devolución se informarán antes de confirmar el pago.</li>
+      <li>Los datos personales se usarán exclusivamente para gestionar la solicitud, el pago, la agenda y la prestación del servicio.</li>
+    </ol>
+  </article>
+  <aside class="sena-payment"><p class="eyebrow">PAGO</p><h2>Confirmación del cupo</h2><p>Mientras se activa una conciliación automática, la verificación se hará de manera manual.</p><div><span>Nequi</span><strong>3215100277</strong></div><div><span>Llave BBVA</span><strong>@BBVA3215100277</strong></div><p class="sena-note">No envíe contraseñas, códigos de autenticación ni credenciales de plataformas oficiales.</p></aside>
+</section>
+<section class="sena-request" id="solicitud">
+  <header><p class="eyebrow">SOLICITUD</p><h2>Datos para organizar la atención</h2><p>Este formulario deja preparada la estructura del registro. El envío centralizado quedará habilitado cuando se conecte el backend seguro de solicitudes y pagos.</p></header>
+  <form id="sena-request-form">
+    <label>Nombre completo<input name="nombre" autocomplete="name" required></label>
+    <label>WhatsApp o teléfono<input name="telefono" inputmode="tel" autocomplete="tel" required></label>
+    <label>Correo electrónico<input name="correo" type="email" autocomplete="email"></label>
+    <label>Programa al que aspira<input name="programa" required></label>
+    <label>Fecha prevista de la evaluación<input name="fecha" type="date" required></label>
+    <label>Estado del pago<select name="pago" required><option value="">Seleccione</option><option>Pendiente</option><option>Ya realicé el pago</option><option>Pago presencial</option></select></label>
+    <label class="sena-wide">Referencia o número de transacción<input name="referencia" autocomplete="off" placeholder="Solo si ya realizó el pago"></label>
+    <label class="sena-wide">Observaciones<textarea name="observaciones" rows="4" placeholder="Información útil para programar la asesoría"></textarea></label>
+    <label class="sena-consent sena-wide"><input name="acepta" type="checkbox" required><span>He leído y acepto las condiciones del servicio y autorizo el uso de estos datos para gestionar mi solicitud.</span></label>
+    <div class="sena-wide sena-form-actions"><button type="submit">Preparar solicitud</button><p id="sena-form-status" role="status" aria-live="polite"></p></div>
+  </form>
+</section>
+<section class="sena-admin-note"><strong>Estado del módulo:</strong> interfaz pública preparada. Falta conectar almacenamiento privado, verificación de pagos y panel administrativo antes de recibir solicitudes reales.</section>
+</main>
+<footer><div class="footer-brand"><img src="../Logo.jpg" alt="Logotipo"><strong>JORGE A. COTERA</strong></div><span>Educación · Matemáticas · Cultura · <a href="contacto.html">Contacto</a> · <a href="archivo.html">Archivo</a></span><a class="footer-top" href="#">Volver arriba ↑</a></footer>
+<script src="app.js"></script>
+<script src="asesoria-sena.js"></script>
+</body>
+</html>
