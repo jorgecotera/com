@@ -45,9 +45,9 @@
 .quick-access-copy{display:flex;align-items:center;gap:10px;min-width:0}
 .quick-access-copy .eyebrow{margin:0;white-space:nowrap;font-size:8px;letter-spacing:.13em}
 .quick-links{display:flex;align-items:center;flex-wrap:nowrap;gap:6px;min-width:0}
-.quick-links a,.qr-shortcut{height:30px;border-radius:999px;box-shadow:0 1px 2px rgba(0,0,0,.12);transition:transform .16s ease,filter .16s ease,box-shadow .16s ease}
+.quick-links a,.autosinai-shortcut,.qr-shortcut{height:30px;border-radius:999px;box-shadow:0 1px 2px rgba(0,0,0,.12);transition:transform .16s ease,filter .16s ease,box-shadow .16s ease}
 .quick-links a{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:0 11px 0 6px;border:1px solid transparent;color:#fff;text-decoration:none;font:800 10px/1 Arial,sans-serif;letter-spacing:.02em;white-space:nowrap}
-.quick-links a:hover,.qr-shortcut:hover{transform:translateY(-1px);filter:brightness(.92);box-shadow:0 3px 8px rgba(0,0,0,.16)}
+.quick-links a:hover,.autosinai-shortcut:hover,.qr-shortcut:hover{transform:translateY(-1px);filter:brightness(.92);box-shadow:0 3px 8px rgba(0,0,0,.16)}
 .quick-links img{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;border:0!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;clip-path:inset(50%)!important}
 .quick-links a:before{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.94);font:900 10px/1 Arial,sans-serif}
 .quick-links a:after{display:inline-block}
@@ -76,6 +76,12 @@
 .quick-links a:nth-child(5){background:#ee7b32;border-color:#df6c24}
 .quick-links a:nth-child(5):before{content:"C";color:#d9641b}
 .quick-links a:nth-child(5):after{content:"Comunidad"}
+
+
+/* Acceso directo a JACG-AutoSINAÍ. */
+.autosinai-shortcut{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:0 12px 0 6px;border:1px solid #d86a00;background:#f28c18;color:#fff;text-decoration:none;font:800 10px/1 Arial,sans-serif;letter-spacing:.02em;white-space:nowrap}
+.autosinai-shortcut strong{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:#fff;color:#d86a00;font:900 10px/1 Arial,sans-serif}
+.autosinai-shortcut span{line-height:1}
 
 /* El generador QR pertenece a la misma fila y resalta con la identidad del sitio. */
 .qr-shortcut{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:0 12px 0 6px;border:1px solid #171717;background:#171717;color:#fff;text-decoration:none;font:800 10px/1 Arial,sans-serif;letter-spacing:.02em;white-space:nowrap}
@@ -110,7 +116,7 @@
   .quick-access-copy{gap:7px}
   .quick-links{gap:4px}
   .quick-links a{padding-right:8px;font-size:9px}
-  .qr-shortcut{padding-right:9px;font-size:9px}
+  .autosinai-shortcut,.qr-shortcut{padding-right:9px;font-size:9px}
 }
 
 @media(max-width:900px){
@@ -139,7 +145,7 @@
   .quick-access-copy{gap:6px}
   .quick-links{gap:5px}
   .quick-links a{height:29px;padding:0 8px 0 5px;font-size:9px}
-  .qr-shortcut{justify-self:start;height:29px}
+  .autosinai-shortcut,.qr-shortcut{justify-self:start;height:29px}
   #generador-qr.qr-page{width:min(100% - 20px,1080px);padding:16px 0 22px}
   #generador-qr .section-intro{gap:8px}
   #generador-qr .qr-hero{grid-template-columns:1fr}
@@ -168,6 +174,7 @@
 }
 
 .quick-links a,
+.autosinai-shortcut,
 .qr-shortcut{
   width:118px;
   min-width:118px;
@@ -186,6 +193,7 @@
   }
 
   .quick-links a,
+  .autosinai-shortcut,
   .qr-shortcut{
     width:112px;
     min-width:112px;
@@ -196,6 +204,7 @@
 
 /* Corrección final: todos los accesos toman el ancho necesario para el botón QR */
 .quick-links a,
+.autosinai-shortcut,
 .qr-shortcut{
   width:140px;
   min-width:140px;
@@ -205,6 +214,7 @@
 
 @media(max-width:800px){
   .quick-links a,
+  .autosinai-shortcut,
   .qr-shortcut{
     width:140px;
     min-width:140px;
