@@ -1,142 +1,77 @@
-<script language="JavaScript">
-<!--
-function FP_swapImg() {//v1.0
- var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
- n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
- elm.$src=elm.src; elm.src=args[n+1]; } }
-}
-
-function FP_preloadImgs() {//v1.0
- var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
- for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
-}
-
-function FP_getObjectByID(id,o) {//v1.0
- var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
- else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
- if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
- for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
- f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
- for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
- return null;
-}
-// -->
-</script>
-<script language="JavaScript">
-<!--
-function FP_swapImg() {//v1.0
- var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
- n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
- elm.$src=elm.src; elm.src=args[n+1]; } }
-}
-
-function FP_preloadImgs() {//v1.0
- var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
- for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
-}
-
-function FP_getObjectByID(id,o) {//v1.0
- var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
- else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
- if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
- for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
- f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
- for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
- return null;
-}
-// -->
-</script>
-<script language="JavaScript">
-<!--
-function FP_preloadImgs() {//v1.0
- var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
- for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
-}
-// -->
-</script>
-<script language="JavaScript">
-<!--
-function FP_swapImg() {//v1.0
- var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
- n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
- elm.$src=elm.src; elm.src=args[n+1]; } }
-}
-
-function FP_preloadImgs() {//v1.0
- var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
- for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
-}
-
-function FP_getObjectByID(id,o) {//v1.0
- var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
- else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
- if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
- for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
- f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
- for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
- return null;
-}
-// -->
-</script>
-<script language="JavaScript">
-<!--
-function FP_swapImg() {//v1.0
- var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
- n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
- elm.$src=elm.src; elm.src=args[n+1]; } }
-}
-
-function FP_preloadImgs() {//v1.0
- var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
- for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
-}
-
-function FP_getObjectByID(id,o) {//v1.0
- var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
- else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
- if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
- for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
- f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
- for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
- return null;
-}
-// -->
-</script>
-<body bgcolor="#FFFFBE" style="background-attachment: fixed" onload="FP_preloadImgs(/*url*/'button54.gif', /*url*/'button53.gif', /*url*/'buttonB.gif', /*url*/'buttonC.gif')">
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Pitágoras · Actividad 1: recurso interactivo del archivo académico de Jorge Alonso Cotera Guerra.">
+<title>Pitágoras · Actividad 1 — Jorge Alonso Cotera Guerra</title>
+<base href="redesign-b/">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="enhancements.css">
+<link rel="stylesheet" href="recurso-matematico.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html" aria-label="Volver al inicio">
+    <img class="brand-logo" src="../Logo.jpg" alt="Logotipo de Jorge Alonso Cotera Guerra">
+    <span class="brand-name">JORGE A. COTERA<small>Educación · Matemáticas · Cultura</small></span>
+  </a>
+  <button class="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav aria-label="Navegación principal">
+    <a href="../">Inicio</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="articulos.html">Publicaciones</a>
+    <a href="academia.html">Academia</a>
+    <a href="didactica.html" aria-current="page">Didáctica</a>
+    <a href="matematicas.html">Matemáticas</a>
+    <a href="archivo.html">Archivo</a>
+  </nav>
+</header>
+<main class="math-resource">
+<section class="resource-hero">
+  <div class="resource-hero-copy">
+    <p class="eyebrow">RECURSO INTERACTIVO · GEOMETRÍA</p>
+    <h1>Pitágoras · Actividad 1</h1>
+    <p class="resource-lead">Actividad interactiva conservada del archivo didáctico de matemáticas.</p>
+    <div class="resource-actions">
+      <a class="resource-primary" href="alianza.html">← Volver a Alianza</a>
+      <a href="../index.html">Ir a la portada</a>
+    </div>
+  </div>
+  <aside class="resource-hero-meta" aria-label="Información del recurso">
+    <span>ARCHIVO MATEMÁTICO</span>
+    <strong>GeoGebra</strong>
+    <p>Se conserva la actividad original y su dirección de inserción histórica.</p>
+  </aside>
+</section>
+<section class="resource-workspace" aria-labelledby="actividad-geogebra">
+  <div class="resource-main-panel">
+    <header class="resource-panel-heading">
+      <p class="eyebrow">ACTIVIDAD</p>
+      <h2 id="actividad-geogebra">Actividad interactiva</h2>
+    </header>
+    <div class="geogebra-shell">
+      <iframe class="geogebra-frame" scrolling="no" src="https://www.geogebra.org/material/iframe/id/2332523/width/1280/height/631/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="800" height="500" title="Actividad GeoGebra: Pitágoras · Actividad 1"></iframe>
+    </div>
+  </div>
+  <aside class="resource-side-panel">
+    <figure>
+      <img src="../Aesta%202.jpg" alt="Imagen histórica asociada al recurso Pitágoras · Actividad 1">
+      <figcaption>Imagen conservada de la versión histórica del recurso.</figcaption>
+    </figure>
+    <div class="resource-side-copy">
+      <p class="eyebrow">GEOMETRÍA</p>
+      <h2>Recurso del archivo didáctico</h2>
+      <p>La interfaz exterior fue actualizada sin modificar la dirección original de la actividad GeoGebra.</p>
+    </div>
+  </aside>
+</section>
+</main>
+<footer>
+  <div class="footer-brand"><img src="../Logo.jpg" alt="Logotipo"><strong>JORGE A. COTERA</strong></div>
+  <span>Educación · Matemáticas · Cultura · <a href="contacto.html">Contacto</a> · <a href="archivo.html">Archivo</a></span>
+  <a href="alianza.html">Volver a Alianza →</a>
+</footer>
+<script src="app.js"></script>
 </body>
-<table border="1" width="800" style="border-width: 0px">
-	<tr>
-		<td style="border-style: none; border-width: medium">
-		<a href="Alianza.htm" target="_self">
-		<img border="0" id="img61" src="buttonA.gif" height="20" width="100" alt="Atr�s" onmouseover="FP_swapImg(1,0,/*id*/'img61',/*url*/'buttonB.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img61',/*url*/'buttonA.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img61',/*url*/'buttonC.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img61',/*url*/'buttonB.gif')" fp-style="fp-btn: Glass Capsule 4; fp-font-style: Bold; fp-transparent: 1" fp-title="Atr�s"></a></td>
-		<td style="border-style: none; border-width: medium" width="100">
-		<p align="right"><a href="Novedades.htm" target="_self">
-		<img border="0" id="img60" src="button52.gif" height="20" width="100" alt="Salir" onmouseover="FP_swapImg(1,0,/*id*/'img60',/*url*/'button53.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img60',/*url*/'button52.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img60',/*url*/'button54.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img60',/*url*/'button53.gif')" fp-style="fp-btn: Glass Capsule 4; fp-font-style: Bold; fp-transparent: 1; fp-orig: 0" fp-title="Salir"></a></td>
-	</tr>
-</table>
-<div align="left">
-
-
-
-<table border="1" width="800" height="367" style="border-width: 0px">
-	<tr>
-		<td style="border-style: none; border-width: medium" valign="top" width="568">
-
-<p style="margin-top: 0; margin-bottom: 0">
-
-<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/2332523/width/1280/height/631/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto" width="550" height="360" style="border:0px;" name="Y"> </iframe>
-
-
-
-
-		</td>
-		<td style="border-style: none; border-width: medium" width="238" align="center">
-
-<p style="margin-top: 0; margin-bottom: 0">
-<img border="0" src="Aesta%202.jpg" width="222" height="306"></td>
-	</tr>
-	</table>
-</div>
-<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
-
 </html>
