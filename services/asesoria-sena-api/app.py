@@ -122,6 +122,18 @@ def list_requests():
     for r in rows: r['has_comprobante']=bool(r.pop('comprobante_path',None))
     return jsonify(items=rows)
 
+@app.get('/admin/solicitudes/<int:rid>/comprobante')
+def get_receipt(rid):
+    admin_required()
+    with conn() as c:
+        row=c.execute('SELECT code, comprobante_path FROM solicitudes WHERE id=?',(rid,)).fetchone()
+    if not row: abort(404)
+    stored=row['comprobante_path']
+    if not stored: return jsonify(error='Esta solicitud no tiene comprobante.'),404
+    path=(UPLOAD_DIR/stored).resolve()
+    if path.parent!=UPLOAD_DIR.resolve() or not path.is_file(): abort(404)
+    return send_file(path,as_attachment=False,download_name=stored)
+
 @app.patch('/admin/solicitudes/<int:rid>')
 def update_request(rid):
     admin_required(); data=request.get_json(silent=True) or {}; allowed={}
