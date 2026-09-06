@@ -178,7 +178,7 @@ window.communityContent = [
   {year:2023,grade:"9°",area:"Física",type:"PDF",title:"Vectores",href:"../Vectores.pdf"},
   {year:2023,grade:"10°",area:"Física",type:"PDF",title:"Qué es el movimiento",href:"../Qué%20el%20movimiento.pdf"},
   {year:2023,grade:"10°",area:"Física",type:"PDF",title:"Movimiento y sistemas de referencia",href:"../Movimiento%20y%20sistemas%20de%20referencia.pdf"},
-  {year:2023,grade:"10°",area:"Ciencia",type:"LECTURA",title:"La historia del tiempo",href:"https://antroposmoderno.com/word/Stephen_Hawking_Historia_del_Tiempo.pdf",external:true},
+  {year:2023,grade:"10°",area:"Ciencia",type:"LECTURA",title:"La historia del tiempo",description:"Referencia oficial del libro de Stephen Hawking en su editorial.",href:"https://www.penguinrandomhouse.com/books/77010/a-brief-history-of-time-by-stephen-hawking/",external:true},
   {year:2023,grade:"10°",area:"Física",type:"PDF",title:"Movimiento Rectilíneo Uniforme I",href:"../Ejercicios%20MAS%20-%20I.pdf"},
   {year:2023,grade:"10°",area:"Física",type:"PDF",title:"Movimiento Rectilíneo Uniforme II",href:"../Ejercicios%20MAS%20-%20II.pdf"},
   {year:2023,grade:"10°",area:"Física",type:"PDF",title:"Movimiento Rectilíneo Uniforme III",href:"../Ejercicios%20MAS%20-%20III.pdf"},
