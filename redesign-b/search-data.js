@@ -63,8 +63,14 @@ window.siteSearchStatic = [
   {type:"Recurso",title:"Límites laterales",description:"Apoyo visual para aproximaciones por izquierda y derecha.",href:"../Limites_Laterales.htm",keywords:"cálculo límites laterales"},
   {type:"Recurso",title:"Continuidad de una función",description:"Representaciones para analizar continuidad y comportamiento local.",href:"../Continuidad.htm",keywords:"cálculo continuidad funciones"},
   {type:"Recurso",title:"Varias funciones",description:"Colección de representaciones de familias de funciones.",href:"../Funciones_Varias.htm",keywords:"funciones gráficas"},
+  {type:"Recurso",title:"Más funciones",description:"Continuación del archivo de ejemplos y representaciones funcionales.",href:"../Funciones_Mas.htm",keywords:"funciones gráficas representaciones"},
+  {type:"Recurso",title:"Nuevas funciones",description:"Conjunto adicional de ejemplos gráficos para exploración.",href:"../Funciones_Nuevas.htm",keywords:"funciones gráficas exploración"},
   {type:"Recurso",title:"Distribución normal",description:"Representación de la función de densidad normal.",href:"../Curva%20Normal.htm",keywords:"estadística distribución normal"},
   {type:"Recurso",title:"Crecimiento de los pollos",description:"Situación aplicada de modelación matemática.",href:"../Pollo.htm",keywords:"modelación crecimiento pollos"},
   {type:"Recurso",title:"Construcción de viviendas",description:"Situación aplicada de modelación.",href:"../Vivienda.htm",keywords:"modelación vivienda terrenos"},
+  {type:"Recurso",title:"Solución pitagórica I",description:"Primera exploración interactiva del archivo sobre el teorema de Pitágoras.",href:"../Pitagoras%201.htm",keywords:"Pitágoras teorema geometría triángulo rectángulo"},
+  {type:"Recurso",title:"Solución pitagórica II",description:"Segunda exploración interactiva del archivo sobre el teorema de Pitágoras.",href:"../Pitagoras%202.htm",keywords:"Pitágoras teorema geometría triángulo rectángulo"},
+  {type:"Recurso",title:"Solución pitagórica III",description:"Tercera exploración interactiva del archivo sobre el teorema de Pitágoras.",href:"../Pitagoras%203.htm",keywords:"Pitágoras teorema geometría triángulo rectángulo"},
+  {type:"Recurso",title:"Solución pitagórica IV",description:"Cuarta exploración interactiva del archivo sobre el teorema de Pitágoras.",href:"../Pitagoras%204.htm",keywords:"Pitágoras teorema geometría triángulo rectángulo"},
   {type:"Recurso",title:"Números reales",description:"Documento de consulta del curso de cálculo.",href:"../Reales.pdf",keywords:"números reales cálculo pdf"}
 ];
