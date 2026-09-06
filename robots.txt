@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jorgecotera.github.io/sitemap.xml
