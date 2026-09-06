@@ -104,19 +104,9 @@
   .quick-access-copy .eyebrow{flex-basis:100%;margin:0 0 1px}
   .quick-links a,.autosinai-shortcut,.qr-shortcut{width:140px;min-width:140px;height:29px}
 }
-/* Acceso comercial principal: visible antes del contenido de portada. */
-.sena-primary-entry{display:grid;grid-template-columns:1fr auto auto;gap:24px;align-items:center;padding:18px 5vw;background:#f3c400;border-bottom:1px solid #171717;color:#171717}
-.sena-primary-entry span:first-child{display:grid;gap:2px}
-.sena-primary-entry b{font-size:10px;letter-spacing:.14em}
-.sena-primary-entry strong{font-family:Georgia,serif;font-size:26px;font-weight:700}
-.sena-primary-entry small{font-size:12px;line-height:1.35}
-.sena-primary-entry__price{font-size:18px;font-weight:900;white-space:nowrap}
-.sena-primary-entry__cta{background:#171717;color:#fff;padding:13px 17px;font-size:12px;font-weight:900;white-space:nowrap}
-.sena-primary-entry:hover .sena-primary-entry__cta{background:#c81920}
+.sena-cta{display:inline-flex;align-items:center;justify-content:center;background:#f3c400;color:#171717;padding:16px 22px;border:2px solid #171717;font-weight:900;letter-spacing:.02em;white-space:nowrap}
+.sena-cta:hover{background:#c81920;color:#fff;border-color:#c81920}
 @media(max-width:800px){
-  .sena-primary-entry{grid-template-columns:1fr auto;gap:10px 14px;padding:14px 18px}
-  .sena-primary-entry strong{font-size:22px}
-  .sena-primary-entry small{font-size:11px}
-  .sena-primary-entry__price{font-size:15px}
-  .sena-primary-entry__cta{grid-column:1/-1;text-align:center;padding:11px 14px}
+  .hero .actions{flex-wrap:wrap}
+  .sena-cta{width:100%;padding:14px 18px}
 }
